@@ -1,67 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tanner Tompkins</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; max-width: 900px; line-height: 1.6; }
-    nav a { margin-right: 20px; text-decoration: none; color: black; font-weight: bold; }
-    h1 { margin-bottom: 10px; }
-    .section { margin-top: 60px; }
-    .card { border: 1px solid #ddd; padding: 20px; margin-top: 20px; }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav>
-  <a href="#projects">Projects</a>
-  <a href="#experience">Experience</a>
-  <a href="resume.pdf">Resume</a>
-  <a href="capstone.pdf">Capstone PDF</a>
-</nav>
-
-<h1>Tanner Tompkins</h1>
-<p>IT Service Desk | Customer-Focused Problem Solver | Exploring UI/UX & Digital Operations</p>
-
-<div id="projects" class="section">
-  <h2>Projects</h2>
-
-  <div class="card">
-    <h3>Loqi.GG</h3>
-    <p>Primary independent project. Live platform and ongoing development.</p>
-    <p><a href="https://loqi.gg" target="_blank">Visit Loqi.GG</a></p>
+  <div class="topbar">
+    <nav class="nav">
+      <div class="brand">Tanner Tompkins</div>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="resume.pdf" download>Resume</a>
+      <a href="capstone.pdf" download>Capstone PDF</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
 
-  <div class="card">
-    <h3>[Placeholder Project]</h3>
-    <p>In development. Publishing before graduation.</p>
-  </div>
-</div>
+  <main class="container">
 
-<div id="experience" class="section">
-  <h2>Experience</h2>
+    <header class="hero" id="home">
+      <h1>Tanner Tompkins</h1>
+      <p class="tagline">IT Service Desk | Customer-Focused Problem Solver | Exploring UI/UX & Digital Operations</p>
 
-  <h3>Student IT Service Desk – 1 Year</h3>
-  <ul>
-    <li>Troubleshooting hardware and software issues</li>
-    <li>Ticket-based support and escalation</li>
-    <li>Customer-facing technical communication</li>
-  </ul>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View Project</a>
+        <a class="btn" href="resume.pdf" download>Download Resume</a>
+      </div>
 
-  <h3>Personal Banker – 2 Years</h3>
-  <ul>
-    <li>Managed sensitive financial accounts</li>
-    <li>Built long-term client relationships</li>
-    <li>Explained complex financial products clearly</li>
-  </ul>
-</div>
+      <p class="small" style="margin-top:16px;">
+        Primary project: <strong>Loqi.GG</strong>
+      </p>
+    </header>
 
-<div class="section">
-  <h2>Contact</h2>
-  <p>Email: your@email.com</p>
-  <p><a href="https://linkedin.com/in/yourlink" target="_blank">LinkedIn</a></p>
-</div>
+    <section class="section" id="projects">
+      <h2>Projects</h2>
 
+      <div class="grid">
+        <div class="card">
+          <h3>Loqi.GG</h3>
+          <p>Independent site and brand hub. Live v1 today, with planned iteration and expansion.</p>
+
+          <div class="pills">
+            <span class="pill">Live Site</span>
+            <span class="pill">Web</span>
+            <span class="pill">Ongoing</span>
+          </div>
+
+          <div class="actions" style="margin-top:14px;">
+            <a class="btn primary" href="projects/loqi.html">View Case Study</a>
+            <a class="btn" href="https://loqi.gg" target="_blank" rel="noopener">Open Loqi.GG</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <h2>Experience</h2>
+
+      <div class="grid two">
+        <div class="card">
+          <h3>Student IT Service Desk — 1 Year</h3>
+          <p class="small">UCO (Student Role)</p>
+          <ul class="list">
+            <li>Troubleshoot hardware/software issues and guide users through fixes clearly.</li>
+            <li>Work tickets end-to-end and escalate appropriately when needed.</li>
+            <li>Provide calm, customer-facing support under time pressure.</li>
+          </ul>
+          <p class="small" style="margin-top:10px;">(We can tighten these into sharper, more specific bullets once you paste what you actually handle day-to-day.)</p>
+        </div>
+
+        <div class="card">
+          <h3>Personal Banker — 2 Years</h3>
+          <p class="small">Customer-facing, high-trust environment</p>
+          <ul class="list">
+            <li>Handled sensitive customer information with accuracy and professionalism.</li>
+            <li>Built long-term client relationships through clear communication and follow-through.</li>
+            <li>Explained complex products in plain language and resolved issues efficiently.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Content Production (YouTube)</h3>
+        <p>Video editing and production workflow — presented as a professional skill without linking content directly.</p>
+        <ul class="list">
+          <li>Cut and edit videos end-to-end, focusing on pacing, clarity, and watchability.</li>
+          <li>Use OBS for capture/recording and CapCut for editing; familiar with DaVinci Resolve.</li>
+          <li>Manage production workflow from capture → edit → export.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+
+      <div class="card">
+        <p style="margin:0 0 10px;"><strong>Email:</strong> <a href="mailto:tannertompkins911@gmail.com">tannertompkins911@gmail.com</a></p>
+        <p style="margin:0;"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tanner-tompkins-8342b6255/" target="_blank" rel="noopener">tanner-tompkins-8342b6255</a></p>
+      </div>
+
+      <div class="footer">
+        <span>© <span id="year"></span> Tanner Tompkins</span>
+        <a href="resume.pdf" download>Resume</a>
+        <a href="capstone.pdf" download>Capstone PDF</a>
+        <a href="https://github.com/tannyt16/tannertompkins.net" target="_blank" rel="noopener">Portfolio Repository</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
