@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience — Tanner Tompkins</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <nav class="nav">
+      <div class="brand">Tanner Tompkins</div>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="resume.pdf" download>Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <main class="container">
+    <header class="hero">
+      <h1>Experience</h1>
+      <p class="lede">
+        Customer-facing problem solving across IT support and banking, plus end-to-end video production workflow.
+      </p>
+    </header>
+
+    <section class="section">
+      <div class="card">
+        <h3>Student IT Service Desk — 1 Year</h3>
+        <p class="small">Support operations • ticketed work • user communication</p>
+        <ul class="list">
+          <li>Provide direct technical support in a fast-paced, user-facing environment.</li>
+          <li>Document and communicate clearly, escalate appropriately, and follow through to resolution.</li>
+          <li>Stay calm under pressure and keep users informed in plain language.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h3>Personal Banker — 2 Years</h3>
+        <p class="small">High-trust customer service • accuracy • sensitive information</p>
+        <ul class="list">
+          <li>Handled sensitive financial information with professionalism and attention to detail.</li>
+          <li>Built client relationships through consistent follow-up and clear explanations.</li>
+          <li>Resolved issues efficiently while maintaining compliance and customer trust.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h3>Content Production (Video)</h3>
+        <p>
+          I cut and edit every video for my YouTube channel as part of an end-to-end production workflow.
+          This supports my work on Loqi.GG without requiring this portfolio to link directly to personal content.
+        </p>
+        <ul class="list">
+          <li>Capture/recording workflow using OBS.</li>
+          <li>Editing workflow using CapCut; familiar with DaVinci Resolve.</li>
+          <li>Focus on pacing, clarity, and clean exports for upload/publishing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="footer">
+      <span>© <span id="year"></span> Tanner Tompkins</span>
+      <a href="resume.pdf" download>Resume</a>
+      <a href="capstone.pdf" download>Capstone PDF</a>
+      <a href="https://www.linkedin.com/in/tanner-tompkins-8342b6255/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
