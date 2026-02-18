@@ -6,6 +6,11 @@
   --soft:#f8fafc;
   --radius:16px;
   --shadow: 0 10px 24px rgba(15,23,42,.08);
+
+  /* Accent color (change this ONE line if you want a different color) */
+  --accent:#2563eb;        /* blue */
+  --accent-hover:#1d4ed8;  /* darker blue */
+  --accent-soft:#eff6ff;   /* very light blue */
 }
 
 *{box-sizing:border-box}
@@ -84,18 +89,19 @@ h1{
   flex-wrap:wrap;
 }
 
+/* BUTTONS: clearly buttons now */
 .btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
   gap:8px;
-  padding:10px 14px;
+  padding:11px 15px;
   border-radius:12px;
   border:1px solid var(--line);
   background:#fff;
   color:var(--text);
   text-decoration:none;
-  font-weight:750;
+  font-weight:800;
 }
 
 .btn:hover{
@@ -103,7 +109,46 @@ h1{
   transform:translateY(-1px);
 }
 
-.btn.primary{ border-color: var(--text); }
+/* Primary = filled accent */
+.btn.primary{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#fff;
+}
+
+.btn.primary:hover{
+  background:var(--accent-hover);
+  border-color:var(--accent-hover);
+}
+
+/* Secondary button = subtle tinted */
+.btn.secondary{
+  background:var(--accent-soft);
+  border-color:#bfdbfe;
+  color:#1e3a8a;
+}
+
+.btn.secondary:hover{
+  border-color:#93c5fd;
+}
+
+/* PILLS: clearly not buttons */
+.pills{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+
+.pill{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:var(--soft);
+  color:var(--muted);
+  font-weight:700;
+}
 
 .section{
   margin-top:34px;
@@ -138,23 +183,6 @@ h1{
   flex-wrap:wrap;
 }
 
-.pills{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-  margin-top:6px;
-}
-
-.pill{
-  font-size:12px;
-  padding:6px 10px;
-  border-radius:999px;
-  border:1px solid var(--line);
-  background:var(--soft);
-  color:var(--text);
-  font-weight:650;
-}
-
 .list{
   margin:10px 0 0;
   padding-left:18px;
@@ -182,7 +210,11 @@ h1{
 .footer a{
   color:var(--text);
   text-decoration:none;
-  font-weight:750;
+  font-weight:800;
+}
+
+.footer a:hover{
+  color:var(--accent);
 }
 
 .kv{
