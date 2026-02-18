@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Tanner Tompkins</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <nav class="nav">
+      <div class="brand">Tanner Tompkins</div>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="resume.pdf" download>Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <main class="container">
+    <header class="hero">
+      <h1>Contact</h1>
+      <p class="lede">Simple and direct.</p>
+    </header>
+
+    <section class="section">
+      <div class="card">
+        <p style="margin:0 0 10px;">
+          <strong>Email:</strong>
+          <a href="mailto:tannertompkins911@gmail.com">tannertompkins911@gmail.com</a>
+        </p>
+        <p style="margin:0;">
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/tanner-tompkins-8342b6255/" target="_blank" rel="noopener">
+            linkedin.com/in/tanner-tompkins-8342b6255
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <div class="footer">
+      <span>© <span id="year"></span> Tanner Tompkins</span>
+      <a href="resume.pdf" download>Resume</a>
+      <a href="capstone.pdf" download>Capstone PDF</a>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
