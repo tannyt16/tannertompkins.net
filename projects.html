@@ -22,32 +22,52 @@
       <p class="kicker">Projects</p>
       <h1>Loqi.GG</h1>
       <p class="lede">
-        My primary project: a content-creation website and brand hub. This portfolio references it professionally,
-        while the site itself can connect out to platforms if someone chooses to explore.
+        My primary project: a content-creation website and brand hub. This portfolio references it professionally;
+        the site itself can connect out to platforms if someone chooses to explore.
       </p>
 
       <div class="actions">
         <a class="btn primary" href="https://loqi.gg" target="_blank" rel="noopener">Open Loqi.GG</a>
-        <a class="btn ghost" href="contact.html">Contact</a>
+        <a class="btn" href="contact.html">Contact</a>
       </div>
 
-      <!-- Clean circles (no “Primary Project / Web / Content Ops Hub” nonsense) -->
-      <div class="circles" aria-label="Project qualities">
-        <div class="circle" title="Live site">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/>
-          </svg>
+      <!-- Icons + words (no “Primary Project / Web / Content Ops Hub”) -->
+      <div class="iconRow" aria-label="Project details">
+        <div class="iconPill">
+          <div class="iconCircle" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/>
+            </svg>
+          </div>
+          <div>
+            <div class="iconText">Live Website</div>
+            <div class="iconSub">Publicly accessible</div>
+          </div>
         </div>
-        <div class="circle" title="Source repository">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M16 18a4 4 0 0 0-8 0"/><circle cx="12" cy="11" r="3"/>
-            <path d="M5 20h14"/><path d="M7 4h10v4H7z"/>
-          </svg>
+
+        <div class="iconPill">
+          <div class="iconCircle" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 18a4 4 0 0 0-8 0"/><circle cx="12" cy="11" r="3"/>
+              <path d="M5 20h14"/><path d="M7 4h10v4H7z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="iconText">Source Repository</div>
+            <div class="iconSub">GitHub hosted</div>
+          </div>
         </div>
-        <div class="circle" title="Ongoing">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/>
-          </svg>
+
+        <div class="iconPill">
+          <div class="iconCircle" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/>
+            </svg>
+          </div>
+          <div>
+            <div class="iconText">Ongoing</div>
+            <div class="iconSub">Maintained and updated</div>
+          </div>
         </div>
       </div>
     </header>
@@ -65,14 +85,11 @@
             <a href="https://github.com/tannyt16/tannertompkins.net" target="_blank" rel="noopener">github.com/tannyt16/tannertompkins.net</a>
           </li>
         </ul>
-        <p class="small" style="margin-top:10px;">
-          Listed as repositories (not “projects”) to keep the portfolio honest and professional.
-        </p>
       </div>
     </section>
 
     <div class="footer">
-      <span>© <span id="year"></span> Tanner Tompkins</span>
+      <span style="color:var(--muted)">© <span id="year"></span> Tanner Tompkins</span>
       <a href="https://www.linkedin.com/in/tanner-tompkins-8342b6255/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="capstone.pdf" download>Capstone PDF</a>
     </div>
